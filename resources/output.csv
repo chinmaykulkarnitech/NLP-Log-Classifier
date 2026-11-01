@@ -1,0 +1,16 @@
+timestamp,source,log_message,target_label
+2026-10-20 09:00:01,auth-service,User login successful user_id=1001,Security Alert
+2026-10-20 09:00:04,api-gateway,GET /health status=200 duration_ms=12,Unclassified
+2026-10-20 09:00:08,user-service,User profile fetched user_id=1001,Security Alert
+2026-10-20 09:00:12,order-service,Order created order_id=ORD-10001,Unclassified
+2026-10-20 09:00:15,payment-service,Payment initiated payment_id=PAY-20001,Unclassified
+2026-10-20 09:02:01,auth-service,Failed login attempt user_id=unknown,Security Alert
+2026-10-20 09:02:05,api-gateway,Request latency elevated duration_ms=1200,Security Alert
+2026-10-20 09:02:09,database,Connection pool usage high active=9 max=10,Unclassified
+2026-10-20 09:02:17,inventory-service,Low stock sku=SKU-502 remaining=3,Unclassified
+2026-10-20 09:02:29,metrics,CPU usage high percent=86,Unclassified
+2026-10-20 09:04:01,auth-service,Password verification failed user_id=1020,Security Alert
+2026-10-20 09:04:05,database,Connection refused host=db-primary,Unclassified
+2026-10-20 09:04:13,api-gateway,Upstream service timeout route=/orders,Unclassified
+2026-10-20 09:04:25,notification-service,Email delivery failed reason=SMTP_rejected,Error
+2026-10-20 09:04:41,scheduler,Job crashed job_id=JOB-310 exit_code=1,Unclassified
